@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="validation.js"></script>
+    </head>
+    <body class="admin_container">
+        <header>
+            <div class="container">
+                <div class="logo_container">
+                    <figure><a><img src="images/logo.png" alt="Train_logo"></a></figure>
+                </div>
+                <ul class="home_sub_container">
+                    <!--<li><a href="newuserlogin.html">Register Here </a></li>-->
+                    <li class="signup_link"><a href="index.html" > Logout </a></li>
+                    <li><a href="train_info.html">Train Info</a></li>
+                    <li><a href="admin_login.html">Admin Login </a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="admin_heading_container">
+                <h3>Enter the admin details</h3>
+            </div>
+            <form class="admin_form_container">
+               <table>
+                   <tr>
+                       <td>User ID:</td>
+                       <td><input type="text" name="uid" autocomplete="off"></td>
+                   </tr>
+                   <tr>
+                        <td>Password:</td>
+                        <td><input type="password" name="password"></td>
+                   </tr>
+                   <tr class="user_submit">
+                       <td colspan="2"><input type="submit" onclick="adminValidation(uid.value,password.value)"></td>
+                   </tr>
+               </table> 
+            </form>
+            <div id="message">
+                
+            </div>
+        </main>
+    </body>
+</html>
